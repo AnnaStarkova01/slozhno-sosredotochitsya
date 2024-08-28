@@ -17,6 +17,8 @@
   --description-text-color: #000028;
   --section-background-color: var(--description-text-color);
   --section-color-text: #F1B2CE;
+  --section-title-color: var(--menu-color);
+  --shadow-color:var(--menu-color);
   
 
 

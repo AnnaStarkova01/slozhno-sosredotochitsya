@@ -18,6 +18,7 @@
   --description-text-color: var(--menu-color);
   --section-background-color: #FFF1F7;
   --section-color-text: var(--menu-color);
+  --section-title-color: var(--menu-color);
 
 }
 .page.theme_light .header__rec {
