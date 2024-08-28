@@ -19,7 +19,7 @@
   --section-color-text: #F1B2CE;
   --section-title-color: var(--menu-color);
   --shadow-color:var(--menu-color);
-  
+  --shadow-color-link:var(--menu-color);
 
 
 }
