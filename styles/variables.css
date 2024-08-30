@@ -3,8 +3,8 @@
   и их переопределение под различные устройства
 */
 :root {
-  --font-family: 'IBM Plex mono';
-  --background-image: url(/images/cover-image-dark.png);
+  --font-family: 'IBM Plex mono', monospace; 
+  --background-image: url(../images/cover-image-dark.png);
   --menu-color: #FF0070;
   --main-color: var(--menu-color);
   --text-title-color: #DB00FF;
