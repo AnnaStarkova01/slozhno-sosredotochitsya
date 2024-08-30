@@ -4,16 +4,17 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   max-width: 1024px;
   background: var(--section-background-color);
-  background-attachment: fixed;
-  margin: 0 auto;
-}
-
-.header {
-  display: grid;
   background-image: var(--background-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed; 
+  /* margin: 0 auto; */
+  margin-bottom: 0;
+}
+
+.header {
+  display: grid;
   grid-template-rows: repeat(3, 1fr);
   height: 100vh;
   width: 100%;
@@ -83,9 +84,11 @@
 .header__theme-menu-button:hover {
   border: 1px solid var(--menu-color);
 }
+
 .header__theme-menu-button:focus {
   border: none;
   border-bottom: 1px solid var(--menu-color);
+  outline: none;
 }
 
 .header__theme-menu {
@@ -116,6 +119,7 @@
   grid-row-end: 3;
   align-items: center;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 82.5%;
 }
 
 .header__description-text {
@@ -191,6 +195,7 @@
 
 .section__chapter-link:focus {
   border: 1px solid var(--section-color-text);
+  outline: none;
 }
 
 .section__no-focus .section__title {
@@ -304,14 +309,13 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 
-@media (max-width: 376px) {
+@media (max-width: 500px) {
   .page {
     max-width: 375px;
   }
 
   .header {
     grid-template-rows: repeat(3, 1fr);
-    height: 100vh;
     width: 100%;
   }
 
@@ -328,7 +332,7 @@
   }
 
   .header__title {
-    line-height: 82.5%;
+    
     margin-inline-start: 10px;
   }
 
@@ -350,7 +354,7 @@
   .decorated-zone::before {
     bottom: 10px;
     left: 10px;
-  }
+  } 
 
   .section {
     width: 100%;
@@ -359,7 +363,7 @@
     padding-inline-end: 10px;
     margin-block-start: 40px;
     padding-inline-start: 10px;
-  }
+  } 
 
   .section__chapter {
     grid-column-start: 1;
@@ -369,7 +373,7 @@
   .section__title {
     width: auto;
     margin-block-end: 20px;
-  }
+  } 
 
   .section__chapter-title,
   .section__chapter-paragraph {
@@ -388,11 +392,11 @@
   .subtitle {
     grid-column-start: 1;
     grid-column-end: 2;
-  }
+  } 
 
   .section__concentration {
     margin-block-start: 30px;
-  }
+  } 
 
   .section__concentration .section__title {
     grid-row-start: 1;
@@ -402,7 +406,7 @@
   .section__concentration .section__chapter-title {
     grid-row-start: 2;
     grid-row-end: 3;
-  }
+  } 
 
   .section__images {
     margin-block-start: 30px;
@@ -431,7 +435,6 @@
 
   .footer {
     margin-block-start: 40px;
-    height: 100vh;
   }
 
   .footer.decorated-zone::after {
@@ -445,20 +448,21 @@
   }
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+
+@media (min-width: 500px) and (max-width: 768px) {
   .page {
     max-width: 768px;
   }
 
   .header {
     width: 100%;
-    height: 100vh;
   }
-
+ 
   .header__rec {
     margin-inline-end: 10px;
     margin-block-start: -5px;
   }
+
   .decorated-zone::after {
     right: 5px;
   }
@@ -529,11 +533,11 @@
     margin-inline-end: 5px;
   }
 
-  .section__chapter-image {
+ .section__chapter-image {
     margin-inline-end: 5px;
   }
   .footer {
     margin-inline-start: 10px;
-    height: 100vh;
   }
 }
+
