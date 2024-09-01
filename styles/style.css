@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   /* margin: 0 auto; */
   margin-bottom: 0;
 }
@@ -332,7 +332,6 @@
   }
 
   .header__title {
-    
     margin-inline-start: 10px;
   }
 
@@ -354,7 +353,7 @@
   .decorated-zone::before {
     bottom: 10px;
     left: 10px;
-  } 
+  }
 
   .section {
     width: 100%;
@@ -363,7 +362,7 @@
     padding-inline-end: 10px;
     margin-block-start: 40px;
     padding-inline-start: 10px;
-  } 
+  }
 
   .section__chapter {
     grid-column-start: 1;
@@ -373,7 +372,7 @@
   .section__title {
     width: auto;
     margin-block-end: 20px;
-  } 
+  }
 
   .section__chapter-title,
   .section__chapter-paragraph {
@@ -392,11 +391,11 @@
   .subtitle {
     grid-column-start: 1;
     grid-column-end: 2;
-  } 
+  }
 
   .section__concentration {
     margin-block-start: 30px;
-  } 
+  }
 
   .section__concentration .section__title {
     grid-row-start: 1;
@@ -406,7 +405,7 @@
   .section__concentration .section__chapter-title {
     grid-row-start: 2;
     grid-row-end: 3;
-  } 
+  }
 
   .section__images {
     margin-block-start: 30px;
@@ -448,8 +447,8 @@
   }
 }
 
-
 @media (min-width: 500px) and (max-width: 768px) {
+  /* html { overflow-y: hidden; } */
   .page {
     max-width: 768px;
   }
@@ -457,20 +456,20 @@
   .header {
     width: 100%;
   }
- 
+
   .header__rec {
     margin-inline-end: 10px;
     margin-block-start: -5px;
   }
 
   .decorated-zone::after {
-    right: 5px;
+    right: 20px;
   }
 
   .header__theme-menu {
     justify-content: flex-end;
     align-items: center;
-    margin-block-start: 169px;
+    margin-block-start: 172px;
   }
 
   .header__theme-menu-list {
@@ -485,7 +484,7 @@
 
   .header__theme-menu-list,
   .header__description-text {
-    margin-inline-end: 5px;
+    margin-inline-end: 20px;
   }
 
   .section {
@@ -502,12 +501,18 @@
 
   .section__title {
     width: 215px;
+    margin-block-end: 20px;
   }
-
   .section__chapter-title,
   .section__chapter-paragraph {
-    margin-inline-start: 15px;
-    margin-inline-end: 5px;
+    margin-inline-start: 10px;
+    margin-inline-end: 20px;
+  }
+
+  .section__concentration .section__chapter-title,
+  .section__concentration .section__chapter-paragraph {
+    margin-inline-start: 10px;
+    margin-inline-end: 20px;
   }
 
   .section__no-focus .section__chapter-title,
@@ -522,6 +527,10 @@
     grid-column-end: 4;
   }
 
+  .section__concentration .section__chapter-title {
+    margin-inline-start: 10px;
+  }
+
   .section__concentration .section__title {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -530,14 +539,11 @@
 
   .section__images .section__chapter-title {
     margin-inline-start: 0;
-    margin-inline-end: 5px;
+    margin-inline-end: 20px;
   }
 
- .section__chapter-image {
-    margin-inline-end: 5px;
-  }
-  .footer {
-    margin-inline-start: 10px;
+  .section__images {
+    margin-inline-start: 0;
+    margin-inline-end: 10px;
   }
 }
-
